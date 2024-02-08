@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AddBook from './components/AddBook';
 import ViewBook from './components/ViewBook';
+import SearchBook from './components/SearchBook';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<AddBook/>} />
           <Route path='/view' element={<ViewBook/>} />
-          <Route />
+          <Route path='/search' element={<SearchBook/>} />
 
 
         </Routes>
